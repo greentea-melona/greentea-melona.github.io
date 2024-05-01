@@ -1,16 +1,52 @@
-name: Jekyll Themes
-url: http://matt.harzewski.com
-description: Insert tagline here
+title: An Exhibition of A Hunger Artist #Your awesome title
+email: annabellee123456@outlook.com
+description: > # this means to ignore newlines until "baseurl"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-permalink: /themes/:title/
+baseurl:  # the subpath of the site
+url: https://github.com/EinHungerkuenstler/EinHungerkuenstler.github.io # the base hostname & protocol for your site
 
-plugins: [jekyll-paginate]
+permalink: /:year-:month/:title
+timezone: 
 
-highlighter: pygments
-paginate: 20
+favicon: /assets/img/favicon.ico
 
-markdown: rdiscount
-rdiscount:
-    extensions: ['smart']
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+    app_id: #your cusdis app_id
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+user:
+  name: WHY
+  pic: /assets/img/profile.jpg
+  picAlt: "An Exhibition of A Hunger Artist"
+  job: Muss es sein? Es muss sein!
+  # aboutme: true # comment this out if you don't need the 'about' page.
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true   
+
+collections:
+  additional_pages:
+    output: true
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown 
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
