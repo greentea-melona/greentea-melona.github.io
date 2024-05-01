@@ -9,7 +9,7 @@ baseurl:  # the subpath of the site
 url: https://github.com/EinHungerkuenstler/EinHungerkuenstler.github.io # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
-timezone: 
+timezone: Asia/Seoul #TZINFO 맵핑 형식
 
 favicon: /assets/img/favicon.ico
 
@@ -19,11 +19,11 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: WHY
+  name: 녹차메로나
   pic: /assets/img/profile.jpg
   picAlt: "An Exhibition of A Hunger Artist"
-  job: Muss es sein? Es muss sein!
-  # aboutme: true # comment this out if you don't need the 'about' page.
+  job: Eclipse first, the rest nowhere
+  aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
   - README.md
