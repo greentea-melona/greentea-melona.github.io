@@ -23,7 +23,7 @@ user:
   pic: /assets/img/cat2.jpg
   picAlt: "picalt"
   job: Eclipse first, the rest nowhere
-  aboutme: true # comment this out if you don't need the 'about' page.
+  aboutme: false # comment this out if you don't need the 'about' page.
 
 exclude:
   - README.md
