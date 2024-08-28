@@ -27,5 +27,8 @@ title: 마크다운 레코드
 {% endhighlight %}
 **텍스트를 강조시킵니다.**
 
-
+## 이미지 첨부
+{% highlight markdown %}
+![이미지 설명](이미지 경로)
+{% endhighlight %}
 ![burst](/assets/img/burst.gif)
