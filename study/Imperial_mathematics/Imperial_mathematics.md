@@ -9,7 +9,7 @@ title: Surviving the mathematics major at Imperial College London
 
 
 ### Year 1
-
+<!--
 - [Analysis I](/study/Imperial_mathematics/year_1/Analysis_I/Analysis_I)
 
 - [Linear Algebra and Groups](/study/Imperial_mathematics/year_1/Linear_Algebra_and_Groups/Linear_Algebra_and_Groups_main)
@@ -22,6 +22,9 @@ title: Surviving the mathematics major at Imperial College London
 
 - [Individual Research Project](/study/Imperial_mathematics/year_1/Individual_Research_Project/Individual_Research_Project_main)
 
+// 형식 예제
+
+-->
 - [UROP(Undergraduate Research Opportunities Programme)](/study/Imperial_mathematics/year_1/UROP/UROP_main)
 
 ### Year 2
