@@ -228,6 +228,13 @@ img {
     color: #46a891;
     font-family: 'GMT_Medium';
 }
+.customLetter_nav {
+    color: #8d7edc;
+    font-family: 'GMT_Light';
+    font-size: 120%;
+    background-image: url("/assets/img/sky.jpg");
+    background-size:cover;
+}
 
 /* 2. Archive
    ========================================================================== */
@@ -324,7 +331,7 @@ img {
     text-align: center;
 
     @include breakpoint(medium) {
-        margin-top: 8rem;
+        margin-top: 3rem;
         width: 100%;
     }
 
@@ -374,6 +381,7 @@ img {
 
 .theme_changer {   
     cursor: pointer;
+    padding: 0.5rem;
     input {
         display: none;
 
@@ -509,7 +517,16 @@ img {
     }
 }
 
+.clock_cal {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
 
+    @include mobile-only {
+        margin-top: 3rem;
+        width: 100%;
+    }
+}
 
 /* 4. Post
    ========================================================================== */
