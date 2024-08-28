@@ -20,8 +20,8 @@ cusdis:
 
 user:
   name: 녹차메로나
-  pic: /assets/img/profile.jpg
-  picAlt: "An Exhibition of A Hunger Artist"
+  pic: /assets/img/cat2.jpg
+  picAlt: "picalt"
   job: Eclipse first, the rest nowhere
   aboutme: true # comment this out if you don't need the 'about' page.
 
