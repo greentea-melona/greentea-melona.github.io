@@ -13,7 +13,7 @@ order: 2
 ---
 ## 디자인
 
-### [마크다운 레코드](/study/Markdown_Record)
+### [마크다운 레코드](/study/Markdown_record)
 
 
 ## 세부 항목
