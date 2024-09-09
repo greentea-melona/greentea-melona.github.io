@@ -465,6 +465,7 @@ img {
             color: var(--nav_font_hover);
         }
     }
+    
 
     @include mobile-only {
 
@@ -482,14 +483,52 @@ img {
             margin-right: 0;
         }
     }
+    
 }
+
+.nav_cate {
+    display: inline-block;
+//    *display: inline;
+    zoom: 1;
+
+    & a {
+        color: var(--archive_title);
+        font-size: 100%;
+
+        &:hover,
+        &:focus {
+            color: var(--archive_title_hover);
+        }
+    }
+
+    @include mobile-only {
+
+        &:after {
+            content: '/';
+            color: var(--archive_title);
+        }
+
+        &:first-child::before,
+        &:last-child::after {
+            content: none;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+
 
 .mobile_menu {
     display: none;
 
     @include mobile-only {
         display: block;
-        margin: -.5rem;
+        //margin: -.5rem; is default
+        margin: auto;
     }
 
     @include breakpoint(medium) {
@@ -517,14 +556,15 @@ img {
     }
 }
 
-.clock_cal {
+//시계-날짜 영역
+.clock_cal { 
     position: relative;
     text-align: center;
     padding: 1rem;
 
     @include mobile-only {
-        margin-top: 3rem;
-        width: 100%;
+        display: none;
+        //width: 100%;
     }
 }
 
