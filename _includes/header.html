@@ -64,9 +64,9 @@
       {% for category in site.categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       <ul class="nav_list">
-        <li class="nav_item">
+        <li class="nav_cate">
           <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">{{ cat_name }}
-            <!-- ({{ category | last | size }}) -->
+            - {{ category | last | size }} posts 
           </a>
         </li>
       </ul>

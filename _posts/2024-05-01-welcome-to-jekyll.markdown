@@ -2,7 +2,8 @@
 layout: post
 title:  "GUIDE!"
 date:   2024-05-01 21:37:31 +0900
-categories: jekyll update
+categories: [Update]
+comments : false
 ---
 ## 다국어 테스트
 
