@@ -493,7 +493,8 @@ img {
 
     & a {
         color: var(--archive_title);
-        font-size: 100%;
+        font-size: 90%;
+        font-weight: bold;
 
         &:hover,
         &:focus {
