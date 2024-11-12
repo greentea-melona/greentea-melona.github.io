@@ -1,7 +1,16 @@
 <!-- each category page -->
+<script src = "../assets/script/archivesc.js">
+</script>
+
 {% if page.type %}
 <div class="archive">
   <p class="archive_type">{{ page.type }}</p>
+  <div id="archive_preview">
+    <script>
+      catIntro("{{page.type|escapejs}}") 
+    </script>
+
+  </div>  
   <ul>
     {% for post in site.categories[page.type] %}
     {% if post.url %}
@@ -20,7 +29,6 @@
 
   </ul>
 </div>
-
 <!-- main page -->
 {% else %}
 <div class="archive">
@@ -29,7 +37,7 @@
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% else %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture nextyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+  {% capture nextyear %}{{ post.next.date | dat: '%Y' }}{% endcapture %}
   {% if year != nextyear %}
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% endif %}
@@ -50,3 +58,5 @@
   {% endfor %}
 </div>
 {% endif %}
+
+

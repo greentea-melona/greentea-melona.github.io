@@ -228,12 +228,22 @@ img {
     color: #46a891;
     font-family: 'GMT_Medium';
 }
+//가을 version
 .customLetter_nav {
     color: #8d7edc;
     font-family: 'GMT_Light';
     font-size: 120%;
     background-image: url("/assets/img/sky.jpg");
     background-size:cover;
+    
+
+}
+.customLetter_nav_2403 {
+    color:black;
+    background-image: url("/assets/img/24auutmn.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* 2. Archive
@@ -272,6 +282,7 @@ img {
         margin-left: 1.2rem;
         margin-right: 1.2rem;
     }
+    
 }
 
 .archive_date {
@@ -301,7 +312,11 @@ img {
     margin-bottom: 0.6rem;
 }
 
+#archive_preview {
+    word-wrap: normal;
+    color:#8d7edc;
 
+}
 /* 3. Header
    ========================================================================== */
 
@@ -784,4 +799,14 @@ img {
         text-decoration: none;
         color: var(--footer_font_a);
     }
+}
+
+/* 7. extra
+    =========================================================================== */
+
+#buttonA {
+    text-align: center;
+    font-size: 80%;
+    background-color: white;
+    
 }
