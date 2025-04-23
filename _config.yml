@@ -50,3 +50,14 @@ show_drafts: null
 limit_posts: 0
 future:      false
 unpublished: false
+
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts:
+    tag: archive-taxonomy
+  permalinks:
+    tag: /tags/:name/

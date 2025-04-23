@@ -10,8 +10,12 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
+    google-protobuf (4.28.0-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.28.0-x64-mingw-ucrt)
       bigdecimal
       rake (>= 13)
@@ -34,6 +38,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-archives (2.3.0)
+      jekyll (>= 3.6, < 5.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
@@ -66,6 +72,8 @@ GEM
       strscan
     rouge (4.3.0)
     safe_yaml (1.0.5)
+    sass-embedded (1.77.8-arm64-darwin)
+      google-protobuf (~> 4.26)
     sass-embedded (1.77.8-x64-mingw-ucrt)
       google-protobuf (~> 4.26)
     strscan (3.1.0)
@@ -79,11 +87,13 @@ GEM
     webrick (1.8.2)
 
 PLATFORMS
+  arm64-darwin-24
   x64-mingw-ucrt
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
+  jekyll-archives
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
