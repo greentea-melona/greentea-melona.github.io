@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- 태그 페이지 전용 레이아웃 -->
 {% include head.html %}
 
 <body>
@@ -14,16 +14,20 @@
       
     {{ content }}
 
-    <h1>Tag: {{ page.title }}</h1>
-    <h3><div style="color:cadetblue; display:inline-block;">{{page.title}} 태그</div>의 모음입니다.</h3>
-ㄴ
+    <div class = "post_title">
+      <p>Tag: {{ page.title }}</p>
+    </div>
+    <div style="color:skyblue; display:inline-block;"><h3>{{page.title}} 태그</div><span class="post"> 포스트의 모음입니다.</h3>
 
     {% for post in page.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+      <div class="archive_title">
+      <a href="{{ post.url }}" style="color:rgb(113, 172, 196); ">{{ post.title }}</a>
+      <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
+        {{ post.date | date: "%b %d %Y " }}
+      </time>
+      </div>
     {% endfor %}
-
+    </span>
     </main>
 
   </div>

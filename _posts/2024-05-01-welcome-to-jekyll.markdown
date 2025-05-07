@@ -4,6 +4,7 @@ title:  "GUIDE!"
 date:   2024-05-01 21:37:31 +0900
 categories: [Update]
 comments : false
+tags: [develop, test]
 ---
 ## 다국어 테스트
 
