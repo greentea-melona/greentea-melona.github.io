@@ -1,7 +1,7 @@
 ---
 layout: archive-taxonomy
-title: tag_develop
+title: tag_test
 tag : test
 ---
-Page title : {{page.title}}
+태그 모음 : {{page.tag}}
 

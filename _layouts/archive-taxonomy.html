@@ -15,9 +15,9 @@
     {{ content }}
 
     <div class = "post_title">
-      <p>Tag: {{ page.title }}</p>
+      <p>Tag: {{ page.tag }}</p>
     </div>
-    <div style="color:skyblue; display:inline-block;"><h3>{{page.title}} 태그</div><span class="post"> 포스트의 모음입니다.</h3>
+    <div style="color:skyblue; display:inline-block;"><h3>{{page.tag}} 태그</div><span class="post"> 포스트의 모음입니다.</h3>
       {% assign tag = page.tag | default: page.title %}
       {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains tag" %}
       {% for post in tag_posts %}

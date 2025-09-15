@@ -3,15 +3,5 @@ layout: archive-taxonomy
 title: tag_develop
 tag : develop
 ---
-Page title : {{page.title}}
+태그 모음 : {{page.tag}}
 
-
-<ul>
-{% for post in site.posts %}
-  {% if post.tags contains "develop" %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endif %}
-{% endfor %}
-</ul>
