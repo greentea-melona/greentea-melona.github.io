@@ -2,7 +2,7 @@
 title: Tags Archive
 type: test
 layout: simple
-order: 4
+order: 8
 permalink: /test/
 ---
 

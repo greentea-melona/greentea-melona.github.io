@@ -1,8 +1,10 @@
 ---
-title: Mr Crow's Rare and Exotic Goods Store
+title: Language
 layout: simple
 order: 6
 ---
+
+<CENTER><div class='customLetter'>언어 연습장.</div></CENTER>
 
 >  *Медведенко. Отчего вы всегда ходите в черном?*
 >
@@ -16,3 +18,5 @@ order: 6
 > *玛莎： 因为我不幸福，这是我对生活的悼念.*
 > 
 ><p align="right">-- 安东·契诃夫 "海鸥 ", 1895</p>
+
+안톤 체호프 저 『갈매기』, 1895
