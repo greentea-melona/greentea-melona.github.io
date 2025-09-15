@@ -18,15 +18,18 @@
       <p>Tag: {{ page.title }}</p>
     </div>
     <div style="color:skyblue; display:inline-block;"><h3>{{page.title}} 태그</div><span class="post"> 포스트의 모음입니다.</h3>
-
-    {% for post in page.posts %}
+      {% assign tag = page.tag | default: page.title %}
+      {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains tag" %}
+      {% for post in tag_posts %}
       <div class="archive_title">
-      <a href="{{ post.url }}" style="color:rgb(113, 172, 196); ">{{ post.title }}</a>
-      <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-        {{ post.date | date: "%b %d %Y " }}
-      </time>
+        <a href="{{ post.url }}" style="color:rgb(113, 172, 196); ">{{ post.title }}</a>
+        <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
+          {{ post.date | date: "%b %d %Y " }}
+        </time>
       </div>
-    {% endfor %}
+      {% endfor %}
+
+    <span class="post">총 {{ tag_posts | size }}개의 포스트
     </span>
     </main>
 

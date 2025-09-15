@@ -1,13 +1,12 @@
 ---
-layout: simple-tag
+layout: simple
 title: tag_develop
-type : develop
 tag : develop
 ---
 Page title : {{page.title}}
 
 
-<!-- <ul>
+<ul>
 {% for post in site.posts %}
   {% if post.tags contains "develop" %}
     <li>
@@ -15,4 +14,4 @@ Page title : {{page.title}}
     </li>
   {% endif %}
 {% endfor %}
-</ul> -->
+</ul>
