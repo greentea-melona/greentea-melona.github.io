@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: archive-taxonomy
 title: tag_develop
 tag : develop
 ---
