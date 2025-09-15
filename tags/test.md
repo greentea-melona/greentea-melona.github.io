@@ -1,8 +1,8 @@
 ---
 layout: simple-tag
 title: tag_develop
-type : develop
-tag : develop
+type : test
+tag : test
 ---
 Page title : {{page.title}}
 

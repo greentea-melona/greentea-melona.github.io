@@ -111,7 +111,8 @@ body {
     height: 100%;
     font-weight: normal;
     font-style: normal;
-    font-family: 'GMT_Light','GMT_Medium',-apple-system, BlinkMacSystemFont, 'Titillium Web', "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'KakaoSans_Regular','KakaoSans_Light','GMT_Medium',-apple-system, BlinkMacSystemFont, 'Titillium Web', "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     background-color: var(--bg_color);
@@ -215,7 +216,7 @@ img {
     margin-top: 7rem;
 }
 // add option here !!
-
+// GMT 폰트 작으면 깨지니까 대제목 용으로 쓸 것
 @font-face {
     font-family: 'GMT_Medium';
     src: url(GMT_Medium.ttf) format('truetype');
@@ -224,9 +225,22 @@ img {
     font-family: 'GMT_Light';
     src: url(GMT_Light.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'KakaoSans_Light';
+    src: url('KakaoSmallSans-Light.woff2') format('woff2'),
+        url('KakaoSmallSans-Light.woff') format('woff'),
+        url('KakaoSmallSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'KakaoSans_Regular';
+    src: url('KakaoSmallSans-Regular.woff2') format('woff2'),
+        url('KakaoSmallSans-Regular.woff') format('woff'),
+        url('KakaoSmallSans-Regular.ttf') format('truetype');
+}
 .customLetter{
     color: #46a891;
-    font-family: 'GMT_Medium';
+    font-family: 'GMT_Light';
+    font-size: 1.4rem;
 }
 //가을 version
 .customLetter_nav {
@@ -645,7 +659,7 @@ img {
 }
 
 .post_content {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     color: var(--post_text);
 
